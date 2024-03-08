@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6c11qkadp78j"]
+
+[ext_resource type="Texture2D" uid="uid://dayx58g7c7ame" path="res://Scenes/TitleScene/Sprites/Light.png" id="1_yj8x1"]
+
+[node name="Light" type="Node2D"]
+position = Vector2(0.5, 1)
+scale = Vector2(0.5, 0.5)
+
+[node name="Light" type="PointLight2D" parent="."]
+texture_filter = 1
+position = Vector2(1, 7)
+energy = 0.7
+texture = ExtResource("1_yj8x1")
+
+[node name="Shadow" type="PointLight2D" parent="."]
+energy = 0.5
+shadow_enabled = true
+shadow_filter = 1
+shadow_filter_smooth = 3.0
+texture = ExtResource("1_yj8x1")
+texture_scale = 0.5
