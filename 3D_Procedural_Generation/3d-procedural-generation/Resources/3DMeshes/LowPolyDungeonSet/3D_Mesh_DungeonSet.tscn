@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvljqo2cuvanf"]
+
+[ext_resource type="PackedScene" uid="uid://dev7hcaj2gq16" path="res://Resources/3DMeshes/LowPolyDungeonSet/free_modular_low_poly_dungeon_pack.glb" id="1_qc6x3"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_qc6x3")]

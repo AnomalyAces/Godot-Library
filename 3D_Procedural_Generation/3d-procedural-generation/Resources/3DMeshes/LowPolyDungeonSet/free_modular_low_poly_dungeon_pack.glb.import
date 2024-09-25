@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dev7hcaj2gq16"
-path="res://.godot/imported/free_modular_low_poly_dungeon_pack.glb-e881e9c64409717998a375e1df42e1e8.scn"
+path="res://.godot/imported/free_modular_low_poly_dungeon_pack.glb-6067f434d0e10b4e06f5a4eb0b99fcda.scn"
 
 [deps]
 
-source_file="res://Resources/3DMeshes/free_modular_low_poly_dungeon_pack.glb"
-dest_files=["res://.godot/imported/free_modular_low_poly_dungeon_pack.glb-e881e9c64409717998a375e1df42e1e8.scn"]
+source_file="res://Resources/3DMeshes/LowPolyDungeonSet/free_modular_low_poly_dungeon_pack.glb"
+dest_files=["res://.godot/imported/free_modular_low_poly_dungeon_pack.glb-6067f434d0e10b4e06f5a4eb0b99fcda.scn"]
 
 [params]
 
