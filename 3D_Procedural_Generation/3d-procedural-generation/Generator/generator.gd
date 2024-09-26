@@ -19,9 +19,14 @@ const BORDER_TILE:int = 3
 
 
 @onready var grid_map: GridMap = $GridMap
+@onready var dun_mesh: DungeonMesh = $DunMesh
 
 var room_tiles: Array[PackedVector3Array] = []
 var room_positions: PackedVector3Array = []
+
+func _ready() -> void:
+	generate()
+	dun_mesh.create_dungeon()
 
 
 #Setters

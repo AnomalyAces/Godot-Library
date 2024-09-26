@@ -1,5 +1,5 @@
 @tool
-extends Node3D
+class_name DungeonMesh extends Node3D
 
 const ROOM_TILE:int = 0
 const HALLWAY_TILE:int = 1
