@@ -193,32 +193,60 @@ shadow_mesh = SubResource("ArrayMesh_2aidm")
 script = ExtResource("1_a3foh")
 
 [node name="floor" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.5, 0, 0.5)
 mesh = SubResource("ArrayMesh_4yov1")
 skeleton = NodePath("")
 
 [node name="wall_corner_NE" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.45691, 0, -0.519935)
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 1, 0, 0)
+visible = false
+mesh = SubResource("ArrayMesh_4w2pf")
+skeleton = NodePath("")
+
+[node name="wall_corner_NE_Inv" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.25, 0, -2.18557e-08, 0, 0.25, 0, 2.18557e-08, 0, -0.25, 1, 0, 0)
+visible = false
 mesh = SubResource("ArrayMesh_4w2pf")
 skeleton = NodePath("")
 
 [node name="wall_corner_NW" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.482429, 0, -0.519935)
+transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, 0, 0, 0)
+visible = false
+mesh = SubResource("ArrayMesh_4w2pf")
+skeleton = NodePath("")
+
+[node name="wall_corner_NW_Inv" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.98122e-09, 0, -0.25, 0, 0.25, 0, 0.25, 0, 2.98122e-09, 0, 0, 0)
+visible = false
 mesh = SubResource("ArrayMesh_4w2pf")
 skeleton = NodePath("")
 
 [node name="wall_corner_SW" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.574046, 0, 4.49439)
+transform = Transform3D(-0.25, 0, -3.7749e-08, 0, 0.25, 0, 3.7749e-08, 0, -0.25, 0, 0, 1)
+visible = false
+mesh = SubResource("ArrayMesh_4w2pf")
+skeleton = NodePath("")
+
+[node name="wall_corner_SW_Inv" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 1)
+visible = false
 mesh = SubResource("ArrayMesh_4w2pf")
 skeleton = NodePath("")
 
 [node name="wall_corner_SE" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 4.50277, 0, 4.49439)
+transform = Transform3D(-1.09278e-08, 0, -0.25, 0, 0.25, 0, 0.25, 0, -1.09278e-08, 1, 0, 1)
+visible = false
+mesh = SubResource("ArrayMesh_4w2pf")
+skeleton = NodePath("")
+
+[node name="wall_corner_SE_Inv" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, 1, 0, 1)
+visible = false
 mesh = SubResource("ArrayMesh_4w2pf")
 skeleton = NodePath("")
 
 [node name="wall_doorway_N" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -0.5)
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.5, 0, 0)
 mesh = SubResource("ArrayMesh_xxkjy")
 skeleton = NodePath("")
 
@@ -228,12 +256,12 @@ mesh = SubResource("ArrayMesh_f0h2n")
 skeleton = NodePath("")
 
 [node name="wall_N" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -0.5)
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.5, 0, 0)
 mesh = SubResource("ArrayMesh_7yuos")
 skeleton = NodePath("")
 
 [node name="wall_doorway_S" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2, 0, 4.5)
+transform = Transform3D(-0.25, 0, -2.18557e-08, 0, 0.25, 0, 2.18557e-08, 0, -0.25, 0.5, 0, 1)
 mesh = SubResource("ArrayMesh_xxkjy")
 skeleton = NodePath("")
 
@@ -243,12 +271,12 @@ mesh = SubResource("ArrayMesh_f0h2n")
 skeleton = NodePath("")
 
 [node name="wall_S" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4.5)
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.5, 0, 1)
 mesh = SubResource("ArrayMesh_7yuos")
 skeleton = NodePath("")
 
 [node name="wall_doorway_E" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 4.5, 0, 2)
+transform = Transform3D(2.98122e-09, 0, -0.25, 0, 0.25, 0, 0.25, 0, 2.98122e-09, 1, 0, 0.5)
 mesh = SubResource("ArrayMesh_xxkjy")
 skeleton = NodePath("")
 
@@ -258,12 +286,12 @@ mesh = SubResource("ArrayMesh_f0h2n")
 skeleton = NodePath("")
 
 [node name="wall_E" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.5, 0, 2)
+transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, 1, 0, 0.5)
 mesh = SubResource("ArrayMesh_7yuos")
 skeleton = NodePath("")
 
 [node name="wall_doorway_W" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.5, 0, 2)
+transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, 0, 0, 0.5)
 mesh = SubResource("ArrayMesh_xxkjy")
 skeleton = NodePath("")
 
@@ -273,6 +301,6 @@ mesh = SubResource("ArrayMesh_f0h2n")
 skeleton = NodePath("")
 
 [node name="wall_W" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.5, 0, 2)
+transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, 0, 0, 0.5)
 mesh = SubResource("ArrayMesh_7yuos")
 skeleton = NodePath("")
